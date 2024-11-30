@@ -38,12 +38,11 @@ public class MyString {
         if (str1 == str2){
             return true;
         }
-        
+
         int counter = 0;
         for (int i = 0; i < str1.length(); i ++) {
             for (int j = 0; j < str2.length(); j++) {
                 if (str1.charAt(i+j) != str2.charAt(j)) { 
-                    System.out.println("here"); 
                     counter = 0;
                     break;
                 } 
