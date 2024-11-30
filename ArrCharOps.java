@@ -13,13 +13,13 @@ public class ArrCharOps {
         //System.out.println(lastIndexOf(arr1, 'l'));
         //System.out.println(concat(arr1, arr2));
         System.out.println(subArray(arr2, 2, 9));
-        //System.out.println(compareTo("abcd", "abcd"));// 0
-        //System.out.println(compareTo("abc", "abcd")); // -1
-        //System.out.println(compareTo("abw", "abcd")); // 1
-        //System.out.println(compareTo("Abcd", "a")); // 1
-        //System.out.println(compareTo("apple", "banana")); // -1
-        //System.out.println(compareTo("apple", "applepie")); // -1
-        //System.out.println(compareTo("Zoo", "zoo")); // 0
+        System.out.println(compareTo("abcd", "abcd"));// 0
+        System.out.println(compareTo("abc", "abcd")); // -1
+        System.out.println(compareTo("abw", "abcd")); // 1
+        System.out.println(compareTo("Abcd", "a")); // 1
+        System.out.println(compareTo("apple", "banana")); // -1
+        System.out.println(compareTo("apple", "applepie")); // -1
+        System.out.println(compareTo("Zoo", "zoo")); // 0
         //System.out.println(hashCode(arr1));
         //System.out.println(hashCode(arr2));
     }
@@ -176,8 +176,6 @@ public class ArrCharOps {
         if (str1.length() == 0 || str1.length() == 0 ){
             return -2;
         }
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
 
         int minLength = Math.min(str1.length(),str2.length());
         int maxLength = Math.max(str1.length(),str2.length());
