@@ -7,21 +7,22 @@ public class ArrCharOps {
         char[] arr2 = {'U','n','d','e','r','s','t', 'o', 'o', 'd'};
         System.out.println(str);  // Prints the string
         println(arr1);            // Prints an array of characters
-        //System.out.println(charAt(arr1,2));      
-        //System.out.println(indexOf(arr1,'l'));  
-        //System.out.println(indexOf(arr1,'l',3)); 
-        //System.out.println(lastIndexOf(arr1, 'l'));
-        //System.out.println(concat(arr1, arr2));
+        System.out.println(charAt(arr1,2));      
+        System.out.println(indexOf(arr1,'l'));  
+        System.out.println(indexOf(arr1,'l',3)); 
+        System.out.println(lastIndexOf(arr1, 'l'));
+        System.out.println(concat(arr1, arr2));
         System.out.println(subArray(arr2, 2, 9));
-        System.out.println(compareTo("abcd", "abcd"));// 0
+        System.out.println(compareTo("abc", "abc"));// 0
+        System.out.println(compareTo("abc", "aBc"));// 1
         System.out.println(compareTo("abc", "abcd")); // -1
-        System.out.println(compareTo("abw", "abcd")); // 1
+        System.out.println(compareTo("abw", "")); // 1
         System.out.println(compareTo("Abcd", "a")); // 1
         System.out.println(compareTo("apple", "banana")); // -1
         System.out.println(compareTo("apple", "applepie")); // -1
-        System.out.println(compareTo("Zoo", "zoo")); // 0
-        //System.out.println(hashCode(arr1));
-        //System.out.println(hashCode(arr2));
+        System.out.println(compareTo("Zoo", "zoo")); // -1
+        System.out.println(hashCode(arr1));
+        System.out.println(hashCode(arr2));
     }
 
     /** Prints the given array of characters, and moves the cursor to the next line.
@@ -173,7 +174,7 @@ public class ArrCharOps {
      *         return -2 if there is an error with the input.
      */
     public static int compareTo(String str1, String str2) {
-        if (str1.length() == 0 || str1.length() == 0 ){
+        if (str1.length() == 0 || str2.length() == 0 ){
             return -2;
         }
 
